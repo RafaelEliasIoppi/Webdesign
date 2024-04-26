@@ -1,77 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Book</title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="container_botao">
-            <label for="menu">
-                <span class="cabecalho_menu_hamburguer container_imagem"></span> 
-            </label>
-        <ul class="lista_menu">
-            <li class="lista_menu_titulo">categorias</li>
-            <li class="lista_menu_item"><a href="#" class="lista_menu_link">Programação</a></li>
-            <li class="lista_menu_item"><a href="#" class="lista_menu_link">FRONT-END</a></li>
-            <li class="lista_menu_item"><a href="#" class="lista_menu_link">Infraestrutura</a></li>
-            <li class="lista_menu_item"><a href="#" class="lista_menu_link">Business</a></li>
-            <li class="lista_menu_item"><a href="#" class="lista_menu_link">Desing e UX</a></li>
-        </ul>
-        <img src="img/Logo.svg" alt="logo Alura Books container_imagem">
-        </div>
-        <div class="container">
-            <a href="#"> <img src="img/Favoritos.svg" alt="Meus favoritos" class=""></a>
-            <a href="#"> <img src="img/Compras.svg" alt="Carrinho de Compras" class=""></a>
-            <a href="#"> <img src="img/Usuário.svg" alt="Meu perfil" class=""></a>
-        </div>
-    </header>
-    <section class="bannerPrincipal">
-        <h2 class="bannerTitulo">Ja sabe por onde começar?</h2>
-        <p class="bannerTexto">Encontre em nossa estante o que precisa para seu desenvolvimento</p>
-        <input type="search" class="bannerBotao" placeholder="Qual será sua proxima leitura?">
-    </section>
-    <section class="carrossel">
-        <h2 class="carrosselTitulo">Últimos Lançamentos</h2>
-         <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/Portugol.svg" alt="imagem do curso de portugol para iniciantes"></div>
-                <div class="swiper-slide"><img src="img/Javascript.svg" alt="curso de Javascript da alura book"></div>
-                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="curso Apache kafka"></div>
-                <div class="swiper-slide"><img src="img/ReactNative.svg" alt="curso de ReactNative da aluraBook"></div>
-                <div class="swiper-slide"><img src="img/Nodejs.svg" alt="curso de nodeJs da aluraBook"></div>
-                <div class="swiper-slide"><img src="img/Livros.svg" alt="Curso com livros sobre Programação"></div> 
-                ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-            
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>   
-    </section>
+<html lang="en">
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-                spaceBetween: 100,
-            });
-    </script>
-    
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <swiper-container class="mySwiper" scrollbar-hide="true">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
+
 </html>
